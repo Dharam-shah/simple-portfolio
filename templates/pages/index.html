@@ -1,0 +1,81 @@
+{% extends "base.html" %} {% block main %}
+<!-- Hero Section Starts  -->
+<section class="hero_section">
+  <div class="container">
+    <div class="flex-row">
+      <div class="column">
+        <h1 class="heading-primary">
+          Hi, I am Dharmendra, a freelance fullstack developer
+        </h1>
+        <p class="paragraph-primary">
+          I am currently working as freelance fullstack python developer as well
+          as programming instructor. I make websites and web applications using
+          python, django, html, css and javascript,react.
+        </p>
+        <p class="paragraph-primary">
+          As a programming instructor I teach python, django, javascript
+          programming to students. Feel free to check out some of my blogs, at
+          my blog page.
+        </p>
+      </div>
+      <div class="column">
+        {% load static %}
+        <img
+          class="img-responsive"
+          src="{% static 'img/Profile-Photo.png' %}"
+          alt="profle-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hero Section Ends  -->
+
+<!-- Skills Section Starts  -->
+<section class="skills_section">
+  <div class="container">
+    <div class="flex-row">
+      <div class="column">
+        <h5 class="heading-secondary">Main Skills</h5>
+      </div>
+      <div class="column">
+        <p class="paragraph-secondary">
+          HTML,CSS,Bootstrap,Javascript,jQuery,Git,Github,Python, Django,Django
+          REST, React, Nodejs, Postgres, MongoDb,Docker
+        </p>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="column">
+        <h5 class="heading-secondary">Main Software</h5>
+      </div>
+      <div class="column">
+        <p class="paragraph-secondary">
+          VsCode,Chrome,Firefox,Linux, Fedora, Postman,etc
+        </p>
+      </div>
+    </div>
+    <hr class="hr_line" />
+  </div>
+</section>
+<!-- Skills Section Ends  -->
+
+<!-- Contact Section Starts  -->
+<section class="contact_section">
+  <div class="container">
+    <div class="flex-row">
+      <div class="column">
+        <h2 class="heading-secondary">
+          I am thrilled to answer to your next project &rarr;
+        </h2>
+      </div>
+      <div class="column">
+        <a href="mailto:dharmendra69325@gmail.com" class="paragraph-secondary"
+          >dharmendra69325@gmail.com</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section Ends  -->
+{% endblock %}

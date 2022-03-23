@@ -1,0 +1,58 @@
+{% extends "base.html" %} {% block main %} {% load static %}
+<section class="blog-single">
+  <div class="container">
+    <a href="{% url 'blog' %}" class="nav-link"><u>Back to blogs</u></a>
+  </div>
+  <div class="container">
+    <div class="blog-detail">
+      <div class="blog-sigle-img">
+        <img
+          src="{% static 'img/html.png' %}"
+          class="img-responsive"
+          alt="blog-single-img"
+        />
+      </div>
+      <div class="blog-single-info">
+        <div class="blog-single-top-info">
+          <h4 class="blog-title">HTML</h4>
+          <p class="blog-content">
+            The HyperText Markup Language, or HTML is the standard markup
+            language for documents designed to be displayed in a web browser.
+          </p>
+          <span class="blog-date">15 Feb 2022</span>
+        </div>
+        <div class="blog-single-botttom-info">
+          <p class="blog-paragraph">
+            HTML (HyperText Markup Language) is the most basic building block of
+            the Web. It defines the meaning and structure of web content. Other
+            technologies besides HTML are generally used to describe a web
+            page's appearance/presentation (CSS) or functionality/behavior
+            (JavaScript).
+          </p>
+          <p class="blog-paragraph">
+            "Hypertext" refers to links that connect web pages to one another,
+            either within a single website or between websites. Links are a
+            fundamental aspect of the Web. By uploading content to the Internet
+            and linking it to pages created by other people, you become an
+            active participant in the World Wide Web.
+          </p>
+          <p class="blog-paragraph">
+            HTML (HyperText Markup Language) is the most basic building block of
+            the Web. It defines the meaning and structure of web content. Other
+            technologies besides HTML are generally used to describe a web
+            page's appearance/presentation (CSS) or functionality/behavior
+            (JavaScript).
+          </p>
+          <p class="blog-paragraph">
+            "Hypertext" refers to links that connect web pages to one another,
+            either within a single website or between websites. Links are a
+            fundamental aspect of the Web. By uploading content to the Internet
+            and linking it to pages created by other people, you become an
+            active participant in the World Wide Web.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

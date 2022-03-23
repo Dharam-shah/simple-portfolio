@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% block main %} {% load static %}
+<section class="blog_section">
+  <div class="container">
+    <h1 class="heading-primary">My recent blogs &#8595;</h1>
+  </div>
+  <div class="container">
+    <div class="blogs">
+      <div class="blog-card">
+        <div class="blog-info-block">
+          <div class="info-top">
+            <h4 class="blog-title">Html</h4>
+            <p class="blog-content">
+              The HyperText Markup Language, or HTML is the standard markup
+              language for documents designed to be displayed in a web browser.
+            </p>
+            <span class="blog-date">15 Feb 2022</span>
+          </div>
+          <div class="info-button">
+            <a class="blog-link" href="{% url 'blog_detail' %}"
+              >Read more about this blog &#8599;</a
+            >
+          </div>
+        </div>
+
+        <div class="blog-img-block">
+          <img
+            class="img-responsive"
+            src="{% static 'img/html.png' %}"
+            alt="blog-img"
+          />
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-info-block">
+          <div class="info-top">
+            <h4 class="blog-title">Css</h4>
+            <p class="blog-content">
+              This is a demonstration of how different stylesheets can change
+              the layout of your HTML page. You can change the layout of this
+              page by selecting different stylesheets in the menu, or by
+              selecting one of the following links.
+            </p>
+            <span class="blog-date">15 Feb 2022</span>
+          </div>
+          <div class="info-button">
+            <a class="blog-link" href="{% url 'blog_detail' %}"
+              >Read more about this blog &#8599;</a
+            >
+          </div>
+        </div>
+
+        <div class="blog-img-block">
+          <img
+            class="img-responsive"
+            src="{% static 'img/css.jpg' %}"
+            alt="blog-img"
+          />
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-info-block">
+          <div class="info-top">
+            <h4 class="blog-title">Python</h4>
+            <p class="blog-content">
+              The mission of the Python Software Foundation is to promote,
+              protect, and advance the Python programming language, and to
+              support and facilitate the growth of a diverse and international
+              community of Python programmers.
+            </p>
+            <span class="blog-date">15 Feb 2022</span>
+          </div>
+          <div class="info-button">
+            <a class="blog-link" href="{% url 'blog_detail' %}"
+              >Read more about this blog &#8599;</a
+            >
+          </div>
+        </div>
+
+        <div class="blog-img-block">
+          <img
+            class="img-responsive"
+            src="{% static 'img/python-django.jpg' %}"
+            alt="blog-img"
+          />
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-info-block">
+          <div class="info-top">
+            <h4 class="blog-title">Django</h4>
+            <p class="blog-content">
+              Django is a high-level Python web framework that enables rapid
+              development of secure and maintainable websites.
+            </p>
+            <span class="blog-date">15 Feb 2022</span>
+          </div>
+          <div class="info-button">
+            <a class="blog-link" href="{% url 'blog_detail' %}"
+              >Read more about this blog &#8599;</a
+            >
+          </div>
+        </div>
+
+        <div class="blog-img-block">
+          <img
+            class="img-responsive"
+            src="{% static 'img/python-django.jpg' %}"
+            alt="blog-img"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

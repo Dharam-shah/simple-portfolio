@@ -1,0 +1,371 @@
+/* Fonts Starts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap");
+/* Fonts Ends */
+
+/* Variable Declearation STARTS */
+:root {
+  --color-white: #fff;
+  --color-black: #181717;
+  --color-grey: #606060;
+  --color-background: #f3f3f3;
+  --font-primary: "DM Sans", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+/* Variable Declearation Ends */
+
+/* General styling Starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+/* General styling Ends */
+
+/* Typography Starts */
+.heading-primary {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 5.5rem;
+  line-height: 1; /* medium */
+  color: var(--color-black);
+}
+
+.heading-secondary {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: var(--color-black);
+}
+
+.paragraph-primary {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--color-grey);
+  text-transform: none;
+}
+
+.paragraph-secondary {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--color-black);
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.nav-link,
+.nav-logo {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: var(--color-black);
+  text-transform: none;
+  text-decoration: none;
+}
+
+.nav-logo {
+  font-size: 3.6rem;
+}
+/* Typography Ends */
+
+/* Header/Navbar Starts */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 8.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 6.2rem;
+}
+/* Header/Navbar Ends */
+
+/* Hero Section Starts */
+.hero_section {
+  margin-block: 10rem;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row .column:nth-child(1) {
+  flex-basis: 55%;
+}
+
+.hero_section .heading-primary {
+  margin-bottom: 4rem;
+}
+
+.hero_section .paragraph-primary:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+/* Hero Section Ends */
+
+/* Skills Section Starts */
+.skills_section {
+  margin-bottom: 10rem;
+}
+
+.flex-row h5 {
+  font-weight: 500;
+  text-decoration: underline;
+  width: 25rem;
+}
+
+.skills_section .flex-row {
+  margin-bottom: 9rem;
+  justify-content: flex-start;
+  gap: 10rem;
+}
+
+.skills_section .flex-row .column:nth-child(1) {
+  flex-basis: unset;
+}
+
+.hr_line {
+  height: 0.2rem;
+  background-color: var(--color-black);
+}
+/* Skills Section Ends */
+
+/* Contact Section Starts */
+.contact_section {
+  margin-bottom: 12rem;
+}
+.contact_section .flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact_section .flex-row .column:nth-child(1) {
+  flex-basis: 30%;
+}
+
+.contact_section a {
+  text-decoration: none;
+}
+/* Contact Section Ends */
+
+/* Footer Starts */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 4rem;
+}
+/* Footer Ends */
+
+/* BLOG PAGE STYLING STARTS*/
+.blog-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  padding-block: 10rem;
+  border-bottom: 0.2rem solid var(--color-grey);
+  margin-bottom: 2rem;
+}
+
+.blog-info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-title {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-black);
+  margin-bottom: 2.4rem;
+}
+
+.blog-content {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-black);
+  margin-bottom: 2.4rem;
+  width: 67rem;
+}
+
+.blog-date {
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey);
+}
+
+.blog-link {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-black);
+}
+/* BLOG PAGE STYLING ENDS */
+
+/* BLOG-SINGLE PAGE STYLING STARTS */
+.blog-detail {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem solid var(--color-grey);
+}
+
+.blog-single-botttom-info {
+  margin-top: 2rem;
+}
+
+.blog-paragraph {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-black);
+  margin-bottom: 2.4rem;
+}
+/* BLOG SINGLE PAGE STYLING ENDS */
+
+@media (max-width: 59rem) {
+  .container {
+    max-width: 78rem;
+  }
+  .nav {
+    margin-block: 4rem;
+  }
+  .hero_section {
+    margin-block: 7rem;
+  }
+  .hero_section .flex-row {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+  .paragraph-primary {
+    font-size: 2.5rem;
+  }
+  .skills_section .flex-row {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  .skills_section {
+    margin-bottom: 4rem;
+  }
+  .contact_section .flex-row {
+    flex-direction: column;
+  }
+  .contact_section .flex-row .column {
+    padding-bottom: 1rem;
+  }
+  .contact_section {
+    margin-bottom: 7rem;
+  }
+  .blog-card {
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 5rem;
+  }
+  .blog-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 34rem) {
+  .container {
+    max-width: 40rem;
+  }
+  .nav {
+    margin-block: 3rem;
+  }
+  .hero_section {
+    margin-block: 5rem;
+  }
+  .hero_section .flex-row {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .heading-primary {
+    font-size: 3.5rem;
+  }
+  .paragraph-primary {
+    font-size: 2rem;
+  }
+  .skills_section .flex-row {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  .skills_section {
+    margin-bottom: 4rem;
+  }
+  .contact_section .flex-row {
+    flex-direction: column;
+  }
+  .contact_section .flex-row .column {
+    padding-bottom: 1rem;
+  }
+  .contact_section {
+    margin-bottom: 4rem;
+  }
+  .contact_section .column:nth-child(2) {
+    /* text-align: start; */
+    margin-left: -136px;
+  }
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .blog-content {
+    width: 100%;
+  }
+}
