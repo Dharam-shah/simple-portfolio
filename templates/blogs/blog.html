@@ -21,11 +21,7 @@
         </div>
 
         <div class="blog-img-block">
-          <img
-            class="img-responsive"
-            src="{% static blog.image_path %}"
-            alt="blog-img"
-          />
+          <img class="img-responsive" src="{{blog.image.url}}" alt="blog-img" />
         </div>
       </div>
       {% endfor %}

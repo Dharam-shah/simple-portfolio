@@ -9,12 +9,7 @@
         <p class="paragraph-primary">{{para1}}</p>
       </div>
       <div class="column">
-        {% load static %}
-        <img
-          class="img-responsive"
-          src="{% static 'img/Profile-Photo.png' %}"
-          alt="profle-image"
-        />
+        <img class="img-responsive" src="{{image.url}}" alt="profle-image" />
       </div>
     </div>
   </div>
