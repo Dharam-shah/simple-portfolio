@@ -1,7 +1,19 @@
 {% extends "base.html" %} {% block main %} {% load static %}
 <section class="blog-single">
   <div class="container">
-    <a href="{% url 'blog' %}" class="nav-link"><u>Back to blogs</u></a>
+    <div class="flex">
+      <a href="{% url 'blog' %}" class="nav-link underline">Back to blogs</a>
+      <div class="menu-right">
+        <a href="{% url 'blog_update' blog.id %}" class="nav-link underline"
+          >Edit this blog</a
+        >
+        <a
+          href="{% url 'blog_delete' blog.id  %}"
+          class="nav-link underline color-red"
+          >Delete this blog</a
+        >
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="blog-detail">

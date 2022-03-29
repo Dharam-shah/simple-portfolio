@@ -1,7 +1,8 @@
 {% extends "base.html" %} {% block main %} {% load static %}
 <section class="blog_section">
-  <div class="container">
+  <div class="container heading">
     <h1 class="heading-primary">My recent blogs &#8595;</h1>
+    <a href="{% url 'blog_create' %}" class="btn">Create a New Blog</a>
   </div>
   <div class="container">
     <div class="blogs">
@@ -15,7 +16,7 @@
           </div>
           <div class="info-button">
             <a class="blog-link" href="{% url 'blog_detail' blog.id %}"
-              >{{blog.btntext | safe}}</a
+              >Read More</a
             >
           </div>
         </div>
