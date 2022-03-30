@@ -27,7 +27,7 @@ def signin(request):
                     return redirect('/profile')
         else:
             form = AuthenticationForm()
-            return render(request, 'account/register.html', {'form': form})
+            return render(request, 'account/signin.html', {'form': form})
     else:
         return redirect('/profile')
 

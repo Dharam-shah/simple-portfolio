@@ -392,16 +392,16 @@ html {
 }
 
 .register,
-.signin,
+.signin-details,
 .profile {
   margin-block: 6rem;
 }
 
 .register .form-group,
-.signin,
+.signin-details .form-group,
 .profile-details {
   display: flex;
   flex-direction: column;
   width: 24rem;
-  margin-block: 5rem;
+  margin-block: 2rem;
 }
