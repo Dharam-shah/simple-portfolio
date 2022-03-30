@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block main %}
+<section class="profile">
+  <div class="container">
+    <div class="heading">
+      <h1 class="heading-primary">Profile Page</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Hi, {{name}}</h2>
+    <div class="profile-details">
+      <form action="" method="post" novalidate>
+        {% csrf_token %} {% for fm in form %} {{fm.label_tag}} {{fm}}
+        {{fm.errors}}
+        <br />
+        <br />
+        {% endfor %}
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="flex">
+      <a href="{% url 'change_password' %}" class="btn">Change password</a>
+      <a href="{% url 'signout' %}" class="btn">Logout</a>
+    </div>
+  </div>
+</section>
+{% block change_password %} {% endblock %} {% endblock %}

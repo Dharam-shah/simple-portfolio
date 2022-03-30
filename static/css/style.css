@@ -390,3 +390,18 @@ html {
   display: flex;
   justify-content: space-between;
 }
+
+.register,
+.signin,
+.profile {
+  margin-block: 6rem;
+}
+
+.register .form-group,
+.signin,
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  margin-block: 5rem;
+}
