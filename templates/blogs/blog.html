@@ -2,17 +2,17 @@
 <section class="blog_section">
   <div class="container heading">
     <h1 class="heading-primary">My recent blogs &#8595;</h1>
-    <a href="{% url 'blog_create' %}" class="btn">Create a New Blog</a>
   </div>
   <div class="container">
     <div class="blogs">
-      {% for blog in blog_lists %}
+      {% for blog in blogs_list %}
       <div class="blog-card">
         <div class="blog-info-block">
           <div class="info-top">
             <h4 class="blog-title">{{blog.title}}</h4>
             <p class="blog-content">{{blog.subtitle}}</p>
             <span class="blog-date">{{blog.date}}</span>
+            <span class="blog-date">Author : {{blog.author}} </span>
           </div>
           <div class="info-button">
             <a class="blog-link" href="{% url 'blog_detail' blog.id %}"
