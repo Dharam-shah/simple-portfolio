@@ -3,13 +3,13 @@ from django.db import models
 # Create your models here.
 
 """ Homepage Banner Model """
-class Homepage_banner(models.Model):
-    Banner_title = models.CharField(max_length=200)
-    Banner_subtitle = models.CharField(max_length=200)
-    Banner_image = models.ImageField(upload_to='images/')
+class HomepageBanner(models.Model):
+    banner_title = models.CharField(max_length=200)
+    banner_subtitle = models.CharField(max_length=200)
+    banner_image = models.ImageField(upload_to='images/')
 
     def __str__(self):
-        return self.Banner_title
+        return f'{slef.id} | {self.banner_title}'
 
 """ Homepage Blogs,Article page Blog and Blog detail page blog Model """
 class Blog(models.Model):
